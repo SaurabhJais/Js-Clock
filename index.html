@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="clock.js"></script>
+
+    <style>
+        .main{
+            height: 500px;
+            width: 500px;
+            border: 1px solid red;
+            margin: auto;
+            border-radius: 250px
+         }
+        .hour,.minute,.second{
+            height: 400px;
+            width: 400px;
+            border: 1px solid transparent;
+            margin:  50px auto;
+            border-radius: 200px
+        }
+        .minute{
+            margin-top: -450px; 
+        }
+        .second{
+            margin-top: -450px;
+        }
+        .hour-strip, .minute-strip, .second-strip{
+            height: 10px;
+            border-radius: 10px;
+            width: 205px;
+            background: red;
+             margin-top: 195px;
+             margin-left: 40px
+
+        }
+        .minute-strip{
+            background: blue;
+            margin-left: 25px;
+            width: 225px;
+        }
+        .second-strip{
+            background: green;
+            margin-left: 0px;
+            width: 250px
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="hour" id="id1">
+            <div class="hour-strip">
+
+            </div>
+        </div>
+        <div class="minute" id="id2">
+            <div class="minute-strip">
+
+                </div>
+
+        </div>
+        <div class="second" id="id3">
+                <div class="second-strip">
+
+                    </div>
+
+        </div>
+    </div>
+</body>
+</html>
